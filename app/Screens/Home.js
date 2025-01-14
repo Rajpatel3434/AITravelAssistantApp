@@ -3,6 +3,7 @@ import { View, Text, StyleSheet, TouchableOpacity, Alert } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Icon from "react-native-vector-icons/MaterialIcons";
+import Explore from "./Explore"; // Import ExploreScreen
 
 // Screen Components
 function HomeScreen({ navigation }) {
@@ -127,7 +128,7 @@ export default function Home() {
       >
         <Tab.Screen name="Home" component={HomeScreen} />
         <Tab.Screen name="Plan" component={PlanScreen} />
-        <Tab.Screen name="Explore" component={ExploreScreen} />
+        <Tab.Screen name="Explore" component={Explore} />
         <Tab.Screen name="AI Chat" component={AIChatScreen} />
         <Tab.Screen name="Account" component={AccountScreen} />
       </Tab.Navigator>
